@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>AI/ML on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/ai/ml/</link>
+        <description>Recent content in AI/ML on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language><atom:link href="https://27153216.github.io/categories/ai/ml/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Shoot the Zombie</title>
+        <link>https://27153216.github.io/p/shoot-the-zombie/</link>
+        <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/shoot-the-zombie/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/shoot-the-zombie/home.png" alt="Featured image of post Shoot the Zombie" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/AI-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/AI-Project&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
+&lt;p&gt;這個作品是我人工智慧課程的期末專題，使用 Python 與 Pygame 套件開發的一個打殭屍遊戲。&lt;br&gt;
+殭屍會以固定路線移動，除了玩家自己打殭屍的版本以外，還有各種演算法與機器學習的自動打殭屍版本。&lt;br&gt;
+包含 GA 演算法、 PSO 演算法、 TensorFlow 機器學習，其中 PSO 又分成三種版本，TensorFlow 兩個版本。&lt;br&gt;
+基本概念都是射 10 槍為 1 輪，射 10 輪為 1 次迭代，再不斷的迭代中，電腦會越射越準，越來越接近殭屍的移動路線。&lt;br&gt;
+PSO 會有三個版本是因為，一開始我將 1 輪射擊視為 1 個 Particle，每 10 輪 1 個迭代，但這樣很容易卡在局部最佳解，最高分一直上不去。&lt;br&gt;
+因此後來做了加入 Mutation 的版本，讓它有一點隨機性，跳脫出局部最佳解的狀況。&lt;br&gt;
+而再後來我還是覺得 1 輪射擊視為 1 個 Particle 很奇怪，又做了霰彈槍版本的，一槍就是 10 個子彈，也就是 10 個 Particle，10 槍就是一個迭代，看起來合理許多。&lt;br&gt;
+TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是一起計算的版本。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;遊戲主畫面，左上方會顯示快捷鍵，左下方為剩餘彈藥，下方顯示當次分數與最高分。&lt;br&gt;
+命中殭屍會在背景留下血漬，未命中則是彈孔。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/illustrate.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/shoot-the-zombie/illustrate_hu95438a687529aaf45002119954fa594f_2466062_480x0_resize_box_3.png 480w, https://27153216.github.io/p/shoot-the-zombie/illustrate_hu95438a687529aaf45002119954fa594f_2466062_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;畫面說明&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;演算法版本在右邊會看到一個圖表，縱軸顯示的是得分，橫軸顯示的是迭代次數。&lt;br&gt;
+由於電腦訓練需要時間，可以按下 a 加速進行，按 d 恢復。&lt;br&gt;
+按 z 可以將右方圖表的更新暫停，因為在加速訓練的時候，不斷的刷新圖表會導致運行效率下降。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/alg.png&#34;
+	width=&#34;1470&#34;
+	height=&#34;642&#34;
+	srcset=&#34;https://27153216.github.io/p/shoot-the-zombie/alg_hub219d42cd2b8e8d379c67ab3cb575f93_708716_480x0_resize_box_3.png 480w, https://27153216.github.io/p/shoot-the-zombie/alg_hub219d42cd2b8e8d379c67ab3cb575f93_708716_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;演算法版本&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;228&#34;
+		data-flex-basis=&#34;549px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是只讓電腦知道該槍與殭屍差了多少距離，只有一個 loss 的版本。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/TF1.png&#34;
+	width=&#34;1696&#34;
+	height=&#34;746&#34;
+	srcset=&#34;https://27153216.github.io/p/shoot-the-zombie/TF1_hu4fad4e1074aa924be3a7bbcae1b74bbd_960505_480x0_resize_box_3.png 480w, https://27153216.github.io/p/shoot-the-zombie/TF1_hu4fad4e1074aa924be3a7bbcae1b74bbd_960505_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TensorFlow x, y&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;227&#34;
+		data-flex-basis=&#34;545px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/TF2.png&#34;
+	width=&#34;1697&#34;
+	height=&#34;741&#34;
+	srcset=&#34;https://27153216.github.io/p/shoot-the-zombie/TF2_hu6199df96b081639857bd02341c32450b_938776_480x0_resize_box_3.png 480w, https://27153216.github.io/p/shoot-the-zombie/TF2_hu6199df96b081639857bd02341c32450b_938776_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TensorFlow 1loss&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;229&#34;
+		data-flex-basis=&#34;549px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
+&lt;p&gt;0:00 打殭屍遊戲&lt;br&gt;
+0:26 Genetic Algorithm&lt;br&gt;
+2:03 Particle Swarm Optimization&lt;br&gt;
+3:00 Particle Swarm Optimization + Mutation&lt;br&gt;
+4:50 Particle Swarm Optimization shotgun ver.&lt;br&gt;
+6:08 TensorFlow x,y loss&lt;br&gt;
+7:40 TensorFlow 1 loss&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/8G77gyQYFW8&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        <item>
+        <title>臉部表情辨識及其在老態預防上的應用</title>
+        <link>https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/</link>
+        <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811.png" alt="Featured image of post 臉部表情辨識及其在老態預防上的應用" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/Undergraduate-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/Undergraduate-Project&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;專題介紹&#34;&gt;專題介紹&lt;/h2&gt;
+&lt;p&gt;這個專題是一款使用 Python 開發的小遊戲，玩家可以進行單人打磚塊或是雙人桌球對戰。&lt;br&gt;
+透過 YOLOv3-tiny 物件偵測功能，使用 CK+ 表情資料集進行訓練，使遊戲可以辨識玩家的表情，並將其分為中性、悲傷、開心、生氣、驚訝等五種不同的表情，以控制滑板的不動、向左、向右、左發球、右發球等操作。&lt;br&gt;
+這樣的遊戲方式可以幫助玩家訓練面部肌肉，達到預防臉部老化的效果。&lt;br&gt;
+本專題在專題成果競賽中榮獲第一名，並寫成論文發表至 ICIM 2021 榮獲佳作，還受邀參加 KOSMOS 產學成果展。&lt;/p&gt;
+&lt;p&gt;在這個專題中，我主要負責程式開發的大部分工作，包括遊戲核心、表情控制滑板、效能優化等方面。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;遊戲透過 YOLO 辨識玩家的五種表情，分別是中性、悲傷、開心、生氣、驚訝。&lt;br&gt;
+而玩家則要透過精準的表情控制，來移動滑板。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85neutral.png&#34;
+	width=&#34;643&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85neutral_hu1424bd81084c1faaa33a5db019069ae9_412722_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85neutral_hu1424bd81084c1faaa33a5db019069ae9_412722_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;中性&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85sad.png&#34;
+	width=&#34;643&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85sad_hu1055ec65dcd81ac5f1f4aabd61015824_394868_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85sad_hu1055ec65dcd81ac5f1f4aabd61015824_394868_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;悲傷&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85happy.png&#34;
+	width=&#34;643&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85happy_hub4f16a5209a5d7561052630a92c00cca_391899_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85happy_hub4f16a5209a5d7561052630a92c00cca_391899_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;開心&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85angry.png&#34;
+	width=&#34;643&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85angry_hu9a9df7a73f9b8221b676e8c9a1e3d387_393051_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85angry_hu9a9df7a73f9b8221b676e8c9a1e3d387_393051_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;生氣&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85surprise.png&#34;
+	width=&#34;643&#34;
+	height=&#34;520&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85surprise_hue4a1893da93fd42de735f1c05d80b568_388435_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85surprise_hue4a1893da93fd42de735f1c05d80b568_388435_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;驚訝&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811.png&#34;
+	width=&#34;801&#34;
+	height=&#34;638&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811_huf75e8b2c3e6f76b2adb160073fae3236_247075_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811_huf75e8b2c3e6f76b2adb160073fae3236_247075_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;遊戲主畫面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;301px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;進入遊戲後，可以看到以上五個選項。&lt;br&gt;
+首先選擇遊戲說明選項。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%AA%AA%E6%98%8E.png&#34;
+	width=&#34;801&#34;
+	height=&#34;638&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%AA%AA%E6%98%8E_hu9fa81974438a52061ba80acb92b5ce2c_190126_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%AA%AA%E6%98%8E_hu9fa81974438a52061ba80acb92b5ce2c_190126_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;遊戲說明&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;125&#34;
+		data-flex-basis=&#34;301px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在這個頁面可以看到遊戲的操作說明。&lt;br&gt;
+接著我們選擇單人闖關。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%96%AE%E4%BA%BA.png&#34;
+	width=&#34;1457&#34;
+	height=&#34;640&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%96%AE%E4%BA%BA_huc0022d125d611fb382bef4ba83f5832e_542721_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%96%AE%E4%BA%BA_huc0022d125d611fb382bef4ba83f5832e_542721_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;單人闖關&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;227&#34;
+		data-flex-basis=&#34;546px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;單人闖關，是一人遊玩的打磚塊遊戲。&lt;br&gt;
+總共分為三個關卡，越高的關卡，滑板和球的移動速度就會越快，考驗玩家的表情控制。&lt;/p&gt;
+&lt;p&gt;接著介紹雙人對戰。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%9B%99%E4%BA%BA.png&#34;
+	width=&#34;1867&#34;
+	height=&#34;818&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%9B%99%E4%BA%BA_hu590dd0e576d765cd59c84b2bebe4c42a_731152_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%9B%99%E4%BA%BA_hu590dd0e576d765cd59c84b2bebe4c42a_731152_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;雙人對戰&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;228&#34;
+		data-flex-basis=&#34;547px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;雙人對戰是由兩人參與的桌球遊戲。&lt;br&gt;
+此時攝影機畫面會一分為二，左方玩家控制上方滑板，右方玩家控制下方滑板。&lt;br&gt;
+先奪得 11 分的人獲得勝利，考驗雙方對於表情的掌握度。&lt;/p&gt;
+&lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
+&lt;p&gt;0:00 專題介紹&lt;br&gt;
+0:18 遊戲說明&lt;br&gt;
+0:24 練習模式&lt;br&gt;
+0:56 單人關卡&lt;br&gt;
+2:42 雙人對戰&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/te_chRtOS1g&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;專題發表&#34;&gt;專題發表&lt;/h2&gt;
+&lt;p&gt;榮獲第一名&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95.jfif&#34;
+	width=&#34;1175&#34;
+	height=&#34;881&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95_hua1b079054f4b9e679fa922a4da40c9d7_178223_480x0_resize_q75_box.jfif 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95_hua1b079054f4b9e679fa922a4da40c9d7_178223_1024x0_resize_q75_box.jfif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;專題發表&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95%E7%AC%AC%E4%B8%80%E5%90%8D.jpg&#34;
+	width=&#34;1280&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95%E7%AC%AC%E4%B8%80%E5%90%8D_hu35d11f3997963a08d1282f0f21d95d45_600975_480x0_resize_q75_box.jpg 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95%E7%AC%AC%E4%B8%80%E5%90%8D_hu35d11f3997963a08d1282f0f21d95d45_600975_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;榮獲第一名&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;受邀參加 KOSMOS 產學成果展。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS1.png&#34;
+	width=&#34;720&#34;
+	height=&#34;960&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS1_hu5fa37508d1063523ed103b17b76ad35c_610432_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS1_hu5fa37508d1063523ed103b17b76ad35c_610432_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS2.png&#34;
+	width=&#34;960&#34;
+	height=&#34;720&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS2_hu2616c6995dc5b990497c1badf02c7e5c_669308_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS2_hu2616c6995dc5b990497c1badf02c7e5c_669308_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS3.png&#34;
+	width=&#34;960&#34;
+	height=&#34;720&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS3_hu868249fbb5237acbb0c84696f1730e60_522674_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/KOSMOS3_hu868249fbb5237acbb0c84696f1730e60_522674_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;發表至第 32 屆國際資訊管理學術研討會，榮獲佳作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E7%99%BC%E8%A1%A8.png&#34;
+	width=&#34;1241&#34;
+	height=&#34;1755&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E7%99%BC%E8%A1%A8_hufd20360701fb031b6ec4202565566237_2334370_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E7%99%BC%E8%A1%A8_hufd20360701fb031b6ec4202565566237_2334370_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;發表&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;70&#34;
+		data-flex-basis=&#34;169px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E4%BD%B3%E4%BD%9C.png&#34;
+	width=&#34;1241&#34;
+	height=&#34;1755&#34;
+	srcset=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E4%BD%B3%E4%BD%9C_hu4c63ec024290d5c396f4576318f71b5e_2656771_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/ICIM2021%E4%BD%B3%E4%BD%9C_hu4c63ec024290d5c396f4576318f71b5e_2656771_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;佳作&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;70&#34;
+		data-flex-basis=&#34;169px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

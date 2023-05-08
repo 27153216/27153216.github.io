@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>SQLite on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/sqlite/</link>
+        <description>Recent content in SQLite on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/sqlite/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>PetIII</title>
+        <link>https://27153216.github.io/p/petiii/</link>
+        <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/petiii/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/petiii/home.png" alt="Featured image of post PetIII" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/PetIII&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/PetIII&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
+&lt;p&gt;這是我在行動裝置程式設計的課程中做的課堂作品，使用 Android Studio 開發。&lt;br&gt;
+一款進入關卡，等待攻略時間到，就可以領取獎勵的放置型手機遊戲。&lt;br&gt;
+遊戲使用 NFC 靠卡感應功能實現多個不同玩家的帳號，並透過 SQLite 儲存玩家資料。&lt;br&gt;
+這是一個 3 人小組開發的作品，程式部分幾乎都是由我開發，組員負責劇情及美術設計。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;進入遊戲時，會要求玩家開啟 NFC 感應功能。&lt;br&gt;
+玩家將任一感應式卡片（如悠遊卡）靠近手機後，就可以登入現有帳號或創建新的帳號。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petiii/home.png&#34;
+	width=&#34;462&#34;
+	height=&#34;263&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/home_hu8f2fe866fa854ced2d59fd39edb41ff7_158210_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/home_hu8f2fe866fa854ced2d59fd39edb41ff7_158210_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;卡片感應&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;421px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://27153216.github.io/p/petiii/newacc.png&#34;
+	width=&#34;478&#34;
+	height=&#34;271&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/newacc_huf1b07d12adf950936612c254a94e2dbb_124325_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/newacc_huf1b07d12adf950936612c254a94e2dbb_124325_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;註冊卡片&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;423px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第一次進入遊戲時，會有前置劇情。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petiii/story.png&#34;
+	width=&#34;481&#34;
+	height=&#34;273&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/story_hu08cfa56ab7e09d272e10670a1782578f_164324_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/story_hu08cfa56ab7e09d272e10670a1782578f_164324_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;前置劇情&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;玩家有兩名角色，可以透過通過關卡的金錢進行升級。&lt;br&gt;
+等級會影響關卡的通過率。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petiii/level.png&#34;
+	width=&#34;501&#34;
+	height=&#34;282&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/level_hu1159011470727571e1b3bfebf81b8bea_231353_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/level_hu1159011470727571e1b3bfebf81b8bea_231353_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;角色等級&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;玩家可以透過下拉式選擇要挑戰的關卡，通關的機率由關卡難度和玩家角色等級決定。&lt;br&gt;
+玩家的角色等級與關卡建議等級差距越大，通關的機率就越低。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petiii/stage.png&#34;
+	width=&#34;503&#34;
+	height=&#34;283&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/stage_hu7da716af907bfab32f036a420f13094f_168002_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/stage_hu7da716af907bfab32f036a420f13094f_168002_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;關卡選擇&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;開始挑戰後，畫面顯示攻略所需的剩餘時間和關卡名稱。&lt;br&gt;
+此時玩家即使關閉遊戲，挑戰仍會持續進行，再次靠卡登入就能看到剩餘的時間，或領取挑戰完成的獎勵。&lt;br&gt;
+本遊戲可以實現多張卡片 / 多個帳號同時挑戰關卡而不會互相衝突。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petiii/fight.png&#34;
+	width=&#34;503&#34;
+	height=&#34;283&#34;
+	srcset=&#34;https://27153216.github.io/p/petiii/fight_hua082227c157f9a0cfd6fce8742d2b3c3_143646_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petiii/fight_hua082227c157f9a0cfd6fce8742d2b3c3_143646_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;關卡挑戰中&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/JNKg02lhcR4&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>

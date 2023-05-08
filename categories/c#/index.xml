@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>C# on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/c#/</link>
+        <description>Recent content in C# on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Sat, 01 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/c#/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>PetII</title>
+        <link>https://27153216.github.io/p/petii/</link>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/petii/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/petii/home.png" alt="Featured image of post PetII" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/PetII&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/PetII&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
+&lt;p&gt;這是我在資料庫應用程式設計的課程中做的課堂作品，一款用 Windows Form 開發的寵物小遊戲。&lt;br&gt;
+語言使用 C# ，結合 SQL Server 儲存玩家資料。&lt;br&gt;
+這個作品為 3 人小組開發，我的負責部分為程式撰寫、優化，後半段寵物互動環節的所有內容。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;開啟程式後，可以在畫面中開啟新遊戲或讀取舊有紀錄，旁邊可以調整音量。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/home.png&#34;
+	width=&#34;585&#34;
+	height=&#34;350&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/home_hu4fcf7a56b01de4a678710852a20aefcd_261821_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/home_hu4fcf7a56b01de4a678710852a20aefcd_261821_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主畫面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最多可以有三個存檔紀錄。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/memory.png&#34;
+	width=&#34;575&#34;
+	height=&#34;345&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/memory_hu03a6075643da22ba755c29ca179bc7b2_200364_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/memory_hu03a6075643da22ba755c29ca179bc7b2_200364_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;讀取紀錄&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;開始新遊戲後，會進入一段前置劇情，並幫寵物取名。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/story.png&#34;
+	width=&#34;609&#34;
+	height=&#34;365&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/story_hu316bbe5b7d106006095ca07ca268b9a0_192808_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/story_hu316bbe5b7d106006095ca07ca268b9a0_192808_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;遊戲劇情&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/petii/story2.png&#34;
+	width=&#34;607&#34;
+	height=&#34;363&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/story2_hu45a286eeb70a40194fa765e3d3b421b8_146921_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/story2_hu45a286eeb70a40194fa765e3d3b421b8_146921_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;寵物取名&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;前置劇情結束後，進入寵物互動環節。（由此開始是我獨立開發）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/pet.png&#34;
+	width=&#34;599&#34;
+	height=&#34;360&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/pet_hu947ab9845536c40c81ae23be5595646b_270826_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/pet_hu947ab9845536c40c81ae23be5595646b_270826_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;寵物互動&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;399px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;畫面中會有一隻貓咪四處走動，玩家可以點擊右方按鈕與她進行各種互動。&lt;br&gt;
+畫面上方可以看到操作的紀錄和親密度。&lt;/p&gt;
+&lt;p&gt;此處我們點擊右上方的飼料，會看見飼料隨著滑鼠移動。&lt;br&gt;
+放置於地板後，貓咪會衝向飼料，並增加親密度。&lt;br&gt;
+若放置於無法取得的地方，貓咪會提醒玩家。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/feed.png&#34;
+	width=&#34;599&#34;
+	height=&#34;359&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/feed_hu435572fe8bfa1eea50d565019eb2bcb5_267028_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/feed_hu435572fe8bfa1eea50d565019eb2bcb5_267028_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;拿取飼料&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/petii/feed2.png&#34;
+	width=&#34;597&#34;
+	height=&#34;358&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/feed2_hu9686283ad40edbe7607765783ffe0b4e_264828_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/feed2_hu9686283ad40edbe7607765783ffe0b4e_264828_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;放太遠&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;玩家也可以碰觸貓咪，增加親密度，左上方可以看見玩家操作紀錄。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/feed3.png&#34;
+	width=&#34;599&#34;
+	height=&#34;359&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/feed3_hua5da139d70a688ccb32cdf96fa58c7b5_282036_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/feed3_hua5da139d70a688ccb32cdf96fa58c7b5_282036_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;碰觸&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;玩家若離開程式，下次開啟時也可以讀取上次遊玩的進度。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/memory2.png&#34;
+	width=&#34;599&#34;
+	height=&#34;359&#34;
+	srcset=&#34;https://27153216.github.io/p/petii/memory2_hu3102de4193df25b54762ff8ea89a1599_220011_480x0_resize_box_3.png 480w, https://27153216.github.io/p/petii/memory2_hu3102de4193df25b54762ff8ea89a1599_220011_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;讀取紀錄&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;166&#34;
+		data-flex-basis=&#34;400px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/7ixTZUfAi8w&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>

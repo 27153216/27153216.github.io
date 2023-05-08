@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ASP.NET on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/asp.net/</link>
+        <description>Recent content in ASP.NET on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/asp.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>電子商務平台</title>
+        <link>https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/</link>
+        <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home.png" alt="Featured image of post 電子商務平台" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/EC-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/EC-Project&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
+&lt;p&gt;這是我在電子商務的課程中做的課堂作品，由 ASP.NET 結合 SQL Server 開發的電子商務平台。&lt;br&gt;
+本專題為小組開發，網頁與程式部分全部由我開發，小組成員負責商品構想、行銷計畫、價格制定等等其他部分。&lt;br&gt;
+此購物網站原先是連結到學校的資料庫，但由於課程結束，資料庫已經關閉，因此這個版本改成本地資料庫。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;首頁由五張輪播圖構成。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home_hudc426b49b28eed20ad460c03c6285da5_1182539_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home_hudc426b49b28eed20ad460c03c6285da5_1182539_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;首頁&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;品牌故事介紹。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/story.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/story_hu0446092a5759f102ed186d653088352c_656149_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/story_hu0446092a5759f102ed186d653088352c_656149_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;品牌故事&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;購買商品頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/page.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/page_hu37851eabea6f0af35285d7254cf76650_591462_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/page_hu37851eabea6f0af35285d7254cf76650_591462_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;商品頁面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;（商品的資料為方便演示，並非當時的真實資料）
+購買按鈕已經沒有功能，因為學校伺服器已經關閉。&lt;/p&gt;
+&lt;p&gt;帳號註冊、登入。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signup.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signup_huc285ff5fea80721cd6cb43a2d76ffdc5_98601_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signup_huc285ff5fea80721cd6cb43a2d76ffdc5_98601_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;註冊頁面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signin.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signin_hu58babbf86fb128386bb607d815c8744d_56173_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signin_hu58babbf86fb128386bb607d815c8744d_56173_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;登入頁面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;登入後可以在右上方看見使用者名稱。&lt;br&gt;
+此時由於我登入的是我的管理帳號，所以可以看到管理的按鈕。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/logged.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/logged_hu88fd2b7e9ef275384a5a525346c24bc1_2860282_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/logged_hu88fd2b7e9ef275384a5a525346c24bc1_2860282_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;登入後&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;因為在不斷修改資料的過程中，每次修改都要連入學校的資料庫，打一長串資料庫指令，非常繁瑣。&lt;br&gt;
+因此我自己建立了一個管理頁面，並且要登入指定的帳戶才能進入，方便我自己修改及新增資料。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/manage.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/manage_hu0b4737215db9ee1e61f098414f6bcc36_159986_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/manage_hu0b4737215db9ee1e61f098414f6bcc36_159986_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;管理頁面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/nO9epd85TM0&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>

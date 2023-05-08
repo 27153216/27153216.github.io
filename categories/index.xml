@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/</link>
+        <description>Recent content in Categories on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Python</title>
+        <link>https://27153216.github.io/categories/python/</link>
+        <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>專題</title>
+        <link>https://27153216.github.io/categories/%E5%B0%88%E9%A1%8C/</link>
+        <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/%E5%B0%88%E9%A1%8C/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ASP.NET</title>
+        <link>https://27153216.github.io/categories/asp.net/</link>
+        <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/asp.net/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SQL Server</title>
+        <link>https://27153216.github.io/categories/sql-server/</link>
+        <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/sql-server/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://27153216.github.io/categories/java/</link>
+        <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SQLite</title>
+        <link>https://27153216.github.io/categories/sqlite/</link>
+        <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/sqlite/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>C#</title>
+        <link>https://27153216.github.io/categories/c#/</link>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/c#/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>MySQL</title>
+        <link>https://27153216.github.io/categories/mysql/</link>
+        <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/mysql/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>PHP</title>
+        <link>https://27153216.github.io/categories/php/</link>
+        <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/php/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Android App</title>
+        <link>https://27153216.github.io/categories/android-app/</link>
+        <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/android-app/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>App Inventor 2</title>
+        <link>https://27153216.github.io/categories/app-inventor-2/</link>
+        <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/app-inventor-2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>AI/ML</title>
+        <link>https://27153216.github.io/categories/ai/ml/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/categories/ai/ml/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

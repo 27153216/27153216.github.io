@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>App Inventor 2 on 王昱翔的程式小窩</title>
+        <link>https://27153216.github.io/categories/app-inventor-2/</link>
+        <description>Recent content in App Inventor 2 on 王昱翔的程式小窩</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Thu, 11 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/app-inventor-2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>享受，想瘦。</title>
+        <link>https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/</link>
+        <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E5%B0%81%E9%9D%A2%E5%9C%96.png" alt="Featured image of post 享受，想瘦。" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/High-School-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/High-School-Project&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;專題介紹&#34;&gt;專題介紹&lt;/h2&gt;
+&lt;p&gt;「享受，想瘦」是我的高中專題，透過 App Inventor 2 開發的減肥手機應用程式。&lt;br&gt;
+App Inventor 2 是一個由麻省理工學院開發的，用於製作手機應用程式的開發平台，使用積木的拖曳方式，輕鬆地製作 Android 系統的應用程式，而不需要太多的 coding 知識。&lt;br&gt;
+「享受，想瘦」可以根據使用者的體重，計算使用者做各種運動消耗的熱量，並記錄每日消耗熱量製成折線圖，以及在各項運動中消耗熱量佔比的圓餅圖。&lt;br&gt;
+程式開發方面皆是我獨立完成，並在最後的專題競賽中榮獲優選。&lt;/p&gt;
+&lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
+&lt;p&gt;在第一次進入應用程式時，會請使用者輸入他的體重。&lt;br&gt;
+使用者輸入體重之後，這筆資料便會記錄於資料庫中，下次啟動就不用再次輸入。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D.png&#34;
+	width=&#34;720&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D_hu408543a07ad4b229067a3944f2a33f27_90370_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D_hu408543a07ad4b229067a3944f2a33f27_90370_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;輸入使用者的體重&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D%E5%BE%8C.jpg&#34;
+	width=&#34;720&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D%E5%BE%8C_huc81c2d22864aeb00a6d562edf171c863_86449_480x0_resize_q75_box.jpg 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%BC%B8%E5%85%A5%E9%AB%94%E9%87%8D%E5%BE%8C_huc81c2d22864aeb00a6d562edf171c863_86449_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;輸入後&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;進入應用程式主頁面後，從上方的下拉式選單可以選擇運動的種類。&lt;br&gt;
+如果選單中沒有提供使用者目前的運動，則可以自訂運動名稱和消耗的熱量。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E4%B8%BB%E9%A0%81%E9%9D%A2.png&#34;
+	width=&#34;720&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E4%B8%BB%E9%A0%81%E9%9D%A2_hu000a5587457304a159a4f84568fba4bf_128995_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E4%B8%BB%E9%A0%81%E9%9D%A2_hu000a5587457304a159a4f84568fba4bf_128995_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;主頁面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%81%8B%E5%8B%95%E9%81%B8%E5%96%AE.jpg&#34;
+	width=&#34;720&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%81%8B%E5%8B%95%E9%81%B8%E5%96%AE_hu27ecf2bd395f65b76d5bcb9c215a0adb_43368_480x0_resize_q75_box.jpg 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%81%8B%E5%8B%95%E9%81%B8%E5%96%AE_hu27ecf2bd395f65b76d5bcb9c215a0adb_43368_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;選擇運動&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%87%AA%E8%A8%82%E9%81%8B%E5%8B%95.png&#34;
+	width=&#34;720&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%87%AA%E8%A8%82%E9%81%8B%E5%8B%95_hu07421c0bda5eb42338214c69079256dd_79863_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E8%87%AA%E8%A8%82%E9%81%8B%E5%8B%95_hu07421c0bda5eb42338214c69079256dd_79863_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;自訂運動&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;56&#34;
+		data-flex-basis=&#34;135px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;按下開始運動後，碼錶開始計時。&lt;br&gt;
+應用程式會開始根據使用者的體重與運動的種類，計算消耗的熱量。&lt;br&gt;
+此時無論是關閉螢幕，將應用程式收至後台，都可以正常的計算時間與消耗熱量。&lt;br&gt;
+使用者做的運動類型、消耗熱量都會記錄在資料庫中。&lt;br&gt;
+從統計圖表中可以查看使用者的每日熱量消耗折線圖，以及各項運動的熱量消耗占比圓餅圖。&lt;br&gt;
+（當時截圖沒截好，有點切到了）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E5%9C%96%E8%A1%A8.png&#34;
+	width=&#34;720&#34;
+	height=&#34;835&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E5%9C%96%E8%A1%A8_huc76ea435abc7fc758a48ee5a1efe14f0_60576_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E5%9C%96%E8%A1%A8_huc76ea435abc7fc758a48ee5a1efe14f0_60576_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;圖表&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;86&#34;
+		data-flex-basis=&#34;206px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;專題發表&#34;&gt;專題發表&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/MyBrzEyg8hM&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最終榮獲優選（只有優選獎項）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%AB%98%E4%B8%AD_%E5%B0%88%E9%A1%8C.JPG&#34;
+	width=&#34;2120&#34;
+	height=&#34;1200&#34;
+	srcset=&#34;https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%AB%98%E4%B8%AD_%E5%B0%88%E9%A1%8C_hu2fb876909d32108b9cca3fef01e81ec4_379933_480x0_resize_q75_box.JPG 480w, https://27153216.github.io/p/%E4%BA%AB%E5%8F%97%E6%83%B3%E7%98%A6/%E9%AB%98%E4%B8%AD_%E5%B0%88%E9%A1%8C_hu2fb876909d32108b9cca3fef01e81ec4_379933_1024x0_resize_q75_box.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;專題發表榮獲優選&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
