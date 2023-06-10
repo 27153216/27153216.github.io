@@ -321,7 +321,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;碩士-機器學習的應用&#34;&gt;【碩士 機器學習的應用】&lt;/h3&gt;
-&lt;p&gt;我在國立中正大學資訊管理所攻讀碩士，研究方向是機器學習在單張影像去霧方面的應用。&lt;br&gt;
+&lt;p&gt;大三下開始準備攻讀研究所，因為對於人工智慧與機器學習相當有興趣，並認為這會是未來發展的趨勢，就朝著有做相關研究的實驗室去找。（當時還沒有 ChatGPT、Stable Diffusion 等厲害又熱門的模型）&lt;br&gt;
+而後我在國立中正大學資訊管理所就讀碩士，研究方向是機器學習在單張影像去霧方面的應用。&lt;br&gt;
 碩士論文題目為「使用格狀邊緣增強網路於單影像去霧」，研究中使用引導濾波將影像分解為低頻與高頻，透過低頻格狀去霧網路和高頻邊緣增強網路，以及後處理網路來將影像中的霧氣去除。&lt;br&gt;
 &lt;strong&gt;該研究已經同步發表並收錄於光學頂級期刊 Optics Express 中，英文標題為「Structure-transferring edge-enhanced grid dehazing network」&lt;/strong&gt;。&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-3-3606&amp;amp;id=525244&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

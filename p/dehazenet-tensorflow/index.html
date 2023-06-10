@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='個人練習/ DehazeNet 的 TF 版'>
+<title>DehazeNet TensorFlow</title>
+
+<link rel='canonical' href='https://27153216.github.io/p/dehazenet-tensorflow/'>
+
+<link rel="stylesheet" href="/scss/style.min.74bbc376c2f7fb6909684b7d9304348e4dbd81c83027d902e29f6c4fd09d81ac.css"><meta property='og:title' content='DehazeNet TensorFlow'>
+<meta property='og:description' content='個人練習/ DehazeNet 的 TF 版'>
+<meta property='og:url' content='https://27153216.github.io/p/dehazenet-tensorflow/'>
+<meta property='og:site_name' content='王昱翔的程式小窩'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-01-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-01-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://27153216.github.io/p/dehazenet-tensorflow/home.png' />
+<meta name="twitter:title" content="DehazeNet TensorFlow">
+<meta name="twitter:description" content="個人練習/ DehazeNet 的 TF 版"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://27153216.github.io/p/dehazenet-tensorflow/home.png' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGF1KC6KFX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGF1KC6KFX');
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/%E7%85%A7%E7%89%87_hu78e410438966dc7179e12ad9869b6d36_463242_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">王昱翔的程式小窩</a></h1>
+            <h2 class="site-description">這個網站展示了我的程式作品</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/27153216'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%97%9C%E6%96%BC%E6%88%91/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>關於我</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜尋</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>夜晚模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#作品介紹">作品介紹</a></li>
+    <li><a href="#效果展示">效果展示</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/dehazenet-tensorflow/">
+                <img src="/p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_800x0_resize_box_3.png"
+                        srcset="/p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_800x0_resize_box_3.png 800w, /p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="296" 
+                        loading="lazy"
+                        alt="Featured image of post DehazeNet TensorFlow" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+            <a href="/categories/ai/ml/" >
+                AI/ML
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/dehazenet-tensorflow/">DehazeNet TensorFlow</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            個人練習/ DehazeNet 的 TF 版
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan, 2021</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><a class="link" href="https://github.com/27153216/DehazeNet_TF"  target="_blank" rel="noopener"
+    >https://github.com/27153216/DehazeNet_TF</a></p>
+<h2 id="作品介紹">作品介紹</h2>
+<p>這是 2016 年的機器學習，單張影像去霧的論文：</p>
+<p>DehazeNet An End-to-End System for Single Image<br>
+<a class="link" href="https://ieeexplore.ieee.org/abstract/document/7539399"  target="_blank" rel="noopener"
+    >https://ieeexplore.ieee.org/abstract/document/7539399</a></p>
+<p>的 TensorFlow 實作版。<br>
+本論文原本使用的是相當舊的 Caffe 框架，作為練習，我自己看著 TF 的文檔實作論文中的網路架構。<br>
+可以正常的訓練及測試，由於訓練用的資料庫較新，去霧效果會比原本的好一點。</p>
+<h2 id="效果展示">效果展示</h2>
+<p><img src="/p/dehazenet-tensorflow/home.png"
+	width="2149"
+	height="796"
+	srcset="/p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="網路架構"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="269"
+		data-flex-basis="647px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_2.png"
+	width="600"
+	height="450"
+	srcset="/p/dehazenet-tensorflow/src_2_hu58f199c022c4772265961bd635584737_354406_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_2_hu58f199c022c4772265961bd635584737_354406_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+><img src="/p/dehazenet-tensorflow/2.png"
+	width="600"
+	height="450"
+	srcset="/p/dehazenet-tensorflow/2_hub8d46db25aa2c37bbbce740737ba6145_403921_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/2_hub8d46db25aa2c37bbbce740737ba6145_403921_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_5.png"
+	width="450"
+	height="300"
+	srcset="/p/dehazenet-tensorflow/src_5_huff18665a50a43e55cb0d5ed7dd3a4dee_245186_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_5_huff18665a50a43e55cb0d5ed7dd3a4dee_245186_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+>
+<img src="/p/dehazenet-tensorflow/5.png"
+	width="450"
+	height="300"
+	srcset="/p/dehazenet-tensorflow/5_hu53b08b4998433b95ce7f6ab6ec3683d2_312359_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/5_hu53b08b4998433b95ce7f6ab6ec3683d2_312359_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_13.png"
+	width="450"
+	height="375"
+	srcset="/p/dehazenet-tensorflow/src_13_huaaa2ecd02b1fc1231f4754f03db0c488_364868_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_13_huaaa2ecd02b1fc1231f4754f03db0c488_364868_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="288px"
+	
+>
+<img src="/p/dehazenet-tensorflow/13.png"
+	width="450"
+	height="375"
+	srcset="/p/dehazenet-tensorflow/13_hu1a4a28656025d38abaa46c22bb75d7d2_328643_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/13_hu1a4a28656025d38abaa46c22bb75d7d2_328643_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="288px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_canyon.png"
+	width="768"
+	height="576"
+	srcset="/p/dehazenet-tensorflow/src_canyon_hu41f45279cb9b81f4cac0ea9f6e1d9889_863895_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_canyon_hu41f45279cb9b81f4cac0ea9f6e1d9889_863895_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+>
+<img src="/p/dehazenet-tensorflow/canyon.png"
+	width="768"
+	height="576"
+	srcset="/p/dehazenet-tensorflow/canyon_huead7fe518d23bd55f155bca73c4f0ae3_712497_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/canyon_huead7fe518d23bd55f155bca73c4f0ae3_712497_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_girls.jpg"
+	width="1180"
+	height="763"
+	srcset="/p/dehazenet-tensorflow/src_girls_hu4546ad9532ed3e9273fdee8e5348c5ca_168171_480x0_resize_q75_box.jpg 480w, /p/dehazenet-tensorflow/src_girls_hu4546ad9532ed3e9273fdee8e5348c5ca_168171_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="154"
+		data-flex-basis="371px"
+	
+>
+<img src="/p/dehazenet-tensorflow/girls.png"
+	width="1180"
+	height="763"
+	srcset="/p/dehazenet-tensorflow/girls_hu3779dad7a27b89b621d56cc52bbcd90c_1494955_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/girls_hu3779dad7a27b89b621d56cc52bbcd90c_1494955_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="154"
+		data-flex-basis="371px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_man.png"
+	width="580"
+	height="435"
+	srcset="/p/dehazenet-tensorflow/src_man_hu4d46646572248296ddb748c292a575cf_372850_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_man_hu4d46646572248296ddb748c292a575cf_372850_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+>
+<img src="/p/dehazenet-tensorflow/man.png"
+	width="580"
+	height="435"
+	srcset="/p/dehazenet-tensorflow/man_hu7f29279921f045b7a2695399719dc207_388825_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/man_hu7f29279921f045b7a2695399719dc207_388825_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p><img src="/p/dehazenet-tensorflow/src_ranges.png"
+	width="768"
+	height="512"
+	srcset="/p/dehazenet-tensorflow/src_ranges_hubb4d5a2e4df6f553614cfc5c26baee0e_760696_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/src_ranges_hubb4d5a2e4df6f553614cfc5c26baee0e_760696_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+>
+<img src="/p/dehazenet-tensorflow/ranges.png"
+	width="768"
+	height="512"
+	srcset="/p/dehazenet-tensorflow/ranges_hua181b6975a75d8d402db64cafae17eee_516857_480x0_resize_box_3.png 480w, /p/dehazenet-tensorflow/ranges_hua181b6975a75d8d402db64cafae17eee_516857_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相關文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/shoot-the-zombie/">
+        
+        
+            <div class="article-image">
+                <img src="/p/shoot-the-zombie/home.a46f7241667318469731bf23ae9fc99a_hue11fe5c24e50f9cd86ff2a335cc41171_621494_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Shoot the Zombie"
+                        
+                        data-hash="md5-pG9yQWZzGEaXMb8jrp/Jmg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Shoot the Zombie</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811.c9c270c8314f80817fd6d2719264bb25_huf75e8b2c3e6f76b2adb160073fae3236_247075_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 臉部表情辨識及其在老態預防上的應用"
+                        
+                        data-hash="md5-ycJwyDFPgIF/1tJxkmS7JQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">臉部表情辨識及其在老態預防上的應用</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 王昱翔的程式小窩
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

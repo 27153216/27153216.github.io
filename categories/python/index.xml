@@ -6,7 +6,207 @@
         <description>Recent content in Python on 王昱翔的程式小窩</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>DehazeNet TensorFlow</title>
+        <link>https://27153216.github.io/p/dehazenet-tensorflow/</link>
+        <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/dehazenet-tensorflow/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/dehazenet-tensorflow/home.png" alt="Featured image of post DehazeNet TensorFlow" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/DehazeNet_TF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/27153216/DehazeNet_TF&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
+&lt;p&gt;這是 2016 年的機器學習，單張影像去霧的論文：&lt;/p&gt;
+&lt;p&gt;DehazeNet An End-to-End System for Single Image&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://ieeexplore.ieee.org/abstract/document/7539399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ieeexplore.ieee.org/abstract/document/7539399&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;的 TensorFlow 實作版。&lt;br&gt;
+本論文原本使用的是相當舊的 Caffe 框架，作為練習，我自己看著 TF 的文檔實作論文中的網路架構。&lt;br&gt;
+可以正常的訓練及測試，由於訓練用的資料庫較新，去霧效果會比原本的好一點。&lt;/p&gt;
+&lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/home.png&#34;
+	width=&#34;2149&#34;
+	height=&#34;796&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/home_hu67f8430355ca06b07700fdafc5943ed4_1107042_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;網路架構&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;269&#34;
+		data-flex-basis=&#34;647px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_2.png&#34;
+	width=&#34;600&#34;
+	height=&#34;450&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_2_hu58f199c022c4772265961bd635584737_354406_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_2_hu58f199c022c4772265961bd635584737_354406_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/2.png&#34;
+	width=&#34;600&#34;
+	height=&#34;450&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/2_hub8d46db25aa2c37bbbce740737ba6145_403921_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/2_hub8d46db25aa2c37bbbce740737ba6145_403921_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_5.png&#34;
+	width=&#34;450&#34;
+	height=&#34;300&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_5_huff18665a50a43e55cb0d5ed7dd3a4dee_245186_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_5_huff18665a50a43e55cb0d5ed7dd3a4dee_245186_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/5.png&#34;
+	width=&#34;450&#34;
+	height=&#34;300&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/5_hu53b08b4998433b95ce7f6ab6ec3683d2_312359_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/5_hu53b08b4998433b95ce7f6ab6ec3683d2_312359_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_13.png&#34;
+	width=&#34;450&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_13_huaaa2ecd02b1fc1231f4754f03db0c488_364868_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_13_huaaa2ecd02b1fc1231f4754f03db0c488_364868_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;288px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/13.png&#34;
+	width=&#34;450&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/13_hu1a4a28656025d38abaa46c22bb75d7d2_328643_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/13_hu1a4a28656025d38abaa46c22bb75d7d2_328643_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;288px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_canyon.png&#34;
+	width=&#34;768&#34;
+	height=&#34;576&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_canyon_hu41f45279cb9b81f4cac0ea9f6e1d9889_863895_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_canyon_hu41f45279cb9b81f4cac0ea9f6e1d9889_863895_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/canyon.png&#34;
+	width=&#34;768&#34;
+	height=&#34;576&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/canyon_huead7fe518d23bd55f155bca73c4f0ae3_712497_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/canyon_huead7fe518d23bd55f155bca73c4f0ae3_712497_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_girls.jpg&#34;
+	width=&#34;1180&#34;
+	height=&#34;763&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_girls_hu4546ad9532ed3e9273fdee8e5348c5ca_168171_480x0_resize_q75_box.jpg 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_girls_hu4546ad9532ed3e9273fdee8e5348c5ca_168171_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;371px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/girls.png&#34;
+	width=&#34;1180&#34;
+	height=&#34;763&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/girls_hu3779dad7a27b89b621d56cc52bbcd90c_1494955_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/girls_hu3779dad7a27b89b621d56cc52bbcd90c_1494955_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;371px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_man.png&#34;
+	width=&#34;580&#34;
+	height=&#34;435&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_man_hu4d46646572248296ddb748c292a575cf_372850_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_man_hu4d46646572248296ddb748c292a575cf_372850_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/man.png&#34;
+	width=&#34;580&#34;
+	height=&#34;435&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/man_hu7f29279921f045b7a2695399719dc207_388825_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/man_hu7f29279921f045b7a2695399719dc207_388825_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_ranges.png&#34;
+	width=&#34;768&#34;
+	height=&#34;512&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/src_ranges_hubb4d5a2e4df6f553614cfc5c26baee0e_760696_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/src_ranges_hubb4d5a2e4df6f553614cfc5c26baee0e_760696_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/ranges.png&#34;
+	width=&#34;768&#34;
+	height=&#34;512&#34;
+	srcset=&#34;https://27153216.github.io/p/dehazenet-tensorflow/ranges_hua181b6975a75d8d402db64cafae17eee_516857_480x0_resize_box_3.png 480w, https://27153216.github.io/p/dehazenet-tensorflow/ranges_hua181b6975a75d8d402db64cafae17eee_516857_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Shoot the Zombie</title>
         <link>https://27153216.github.io/p/shoot-the-zombie/</link>
         <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
