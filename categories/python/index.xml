@@ -6,7 +6,247 @@
         <description>Recent content in Python on 王昱翔的程式小窩</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://27153216.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>玩玩熱門 AI</title>
+        <link>https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/</link>
+        <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/</guid>
+        <description>&lt;img src="https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.png" alt="Featured image of post 玩玩熱門 AI" /&gt;&lt;h2 id=&#34;介紹&#34;&gt;介紹&lt;/h2&gt;
+&lt;p&gt;這裡收集了一些我曾接觸過的熱門 AI 以及產出的作品&lt;/p&gt;
+&lt;h2 id=&#34;vits-語音模型&#34;&gt;VITS 語音模型&lt;/h2&gt;
+&lt;p&gt;最初 VITS 是文本轉語音的模型，&lt;br&gt;
+而之後就出現很多以 VITS 為基礎衍伸的模型。&lt;/p&gt;
+&lt;p&gt;VITS 的原始論文與原始碼：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/2106.06103&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://arxiv.org/abs/2106.06103&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/jaywalnut310/vits&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/jaywalnut310/vits&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而我最近在玩的，也就是非常熱門的 RVC。&lt;br&gt;
+全稱 Retrieval-based-Voice-Conversion&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;他是一個基於 VITS 的語音轉換器，&lt;br&gt;
+簡單來說就是變聲器。&lt;/p&gt;
+&lt;p&gt;除了一些熱門的預訓練模型外，&lt;br&gt;
+我也嘗試以自己的聲音訓練，&lt;br&gt;
+並產生了一些驚人的結果。&lt;/p&gt;
+&lt;p&gt;真的是 AI 用你的聲音，唱得比你好聽😂&lt;br&gt;
+這邊放上其中一個。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/PDbjL0rjI1Y&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&#34;stable-diffusion&#34;&gt;Stable Diffusion&lt;/h2&gt;
+&lt;p&gt;論文與原始碼：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/CompVis/stable-diffusion&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/CompVis/stable-diffusion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我想這個應該大家都很熟悉，&lt;br&gt;
+就是造成了很大爭議的 AI 繪圖。&lt;br&gt;
+因為訓練用的資料是否有侵權的疑慮，&lt;br&gt;
+以及大量生產的 AI 圖可能使初階繪師受到衝擊。&lt;/p&gt;
+&lt;p&gt;我使用的生成器是這個&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/AUTOMATIC1111/stable-diffusion-webui&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AUTOMATIC1111/stable-diffusion-webui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這邊分享幾張當初我生成的圖。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1.png&#34;
+	width=&#34;432&#34;
+	height=&#34;307&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1_hu8669b17eddfd453c49405887840b0ac1_239683_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1_hu8669b17eddfd453c49405887840b0ac1_239683_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2.png&#34;
+	width=&#34;512&#34;
+	height=&#34;512&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2_hu20431d00e317e2c75c80b0f2ef7fcb6b_305122_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2_hu20431d00e317e2c75c80b0f2ef7fcb6b_305122_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;其實都看得出在細節上有不少破綻，&lt;br&gt;
+不過到後來一直有更多新的技術在修正這些破綻，&lt;br&gt;
+比如可以調整骨架、手指、臉部的修正等等。&lt;/p&gt;
+&lt;p&gt;但最令我驚訝的應該是 LoRA 的出現。&lt;br&gt;
+全名 LoRA: Low-Rank Adaptation of Large Language Models&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/2106.09685&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://arxiv.org/abs/2106.09685&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原先是用在微調大型語言模型上，&lt;br&gt;
+因為這些大型模型的數據量太大了，&lt;br&gt;
+如果想要特化某些類型的輸出，&lt;br&gt;
+整個重新訓練的成本相當高。&lt;/p&gt;
+&lt;p&gt;而這項技術應用在 Stable Diffusion 上後，&lt;br&gt;
+讓特定風格、角色的生成出現了質的飛越。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/cloneofsimo/lora&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/cloneofsimo/lora&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;只要選好基底的 Checkpoint，&lt;br&gt;
+加上特定風格或角色的 LoRA，&lt;br&gt;
+幾乎能生成出任何種類的人物圖像。&lt;/p&gt;
+&lt;p&gt;改變的關鍵就是特化訓練所需的樣本數很少，&lt;br&gt;
+最少僅需要15張左右的特定樣本，&lt;br&gt;
+以及不到半小時的訓練時間，&lt;br&gt;
+就可以得到很好的效果，&lt;br&gt;
+因此人人都能訓練一個自己喜歡的角色或風格。&lt;/p&gt;
+&lt;p&gt;從真人到特定人物（右圖為新垣結衣）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634.jpeg&#34;
+	width=&#34;512&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;真人&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;66&#34;
+		data-flex-basis=&#34;160px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476.jpeg&#34;
+	width=&#34;768&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476_hu3b4c93ed4ddc46f45f47a84c66fee4e0_132394_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476_hu3b4c93ed4ddc46f45f47a84c66fee4e0_132394_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;新垣結衣&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;53&#34;
+		data-flex-basis=&#34;128px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;來源： &lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/14171/cutegirlmix4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/14171/cutegirlmix4&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/8416/gakki-or-aragaki-yui-or&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/8416/gakki-or-aragaki-yui-or&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特定動畫角色或畫風&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima.jpeg&#34;
+	width=&#34;960&#34;
+	height=&#34;1280&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima_hu2ec4b30c89e029a780f4de13aa41c9f6_126714_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima_hu2ec4b30c89e029a780f4de13aa41c9f6_126714_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;鏈鋸人  瑪奇瑪&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice.jpeg&#34;
+	width=&#34;840&#34;
+	height=&#34;1264&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice_hu05e5b489a2c6f8db75888dfee4aaec14_120395_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice_hu05e5b489a2c6f8db75888dfee4aaec14_120395_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;海賊王  魯夫&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;66&#34;
+		data-flex-basis=&#34;159px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;來源： &lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/5373/makima-chainsaw-man-lora&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/5373/makima-chainsaw-man-lora&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/4219/one-piece-wano-saga-style-lora&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/4219/one-piece-wano-saga-style-lora&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;甚至是布偶、人偶&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll.jpeg&#34;
+	width=&#34;1024&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll_hub87990bf1aa24bea89b0388136d5164e_107583_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll_hub87990bf1aa24bea89b0388136d5164e_107583_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;可動人偶&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;66&#34;
+		data-flex-basis=&#34;160px&#34;
+	
+&gt;
+&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357.jpeg&#34;
+	width=&#34;896&#34;
+	height=&#34;1344&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357_huc2171ebf007bae35ac025e2cca0edbcb_109779_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357_huc2171ebf007bae35ac025e2cca0edbcb_109779_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;布偶&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;66&#34;
+		data-flex-basis=&#34;160px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;來源： &lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/26477/doll-style-photography-art-realisticjoints-dollsdbjdmdddddds&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/26477/doll-style-photography-art-realisticjoints-dollsdbjdmdddddds&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://civitai.com/models/22361/fufu-doll-realisticanime&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://civitai.com/models/22361/fufu-doll-realisticanime&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;都能夠透過 AI 生成，&lt;br&gt;
+不禁令人感嘆現今 AI 發展的速度。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;first-order-motion-model-for-image-animation&#34;&gt;First Order Motion Model for Image Animation&lt;/h2&gt;
+&lt;p&gt;網站、論文、原始碼：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://aliaksandrsiarohin.github.io/first-order-model-website/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://aliaksandrsiarohin.github.io/first-order-model-website/&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://proceedings.neurips.cc/paper_files/paper/2019/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://proceedings.neurips.cc/paper_files/paper/2019/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/AliaksandrSiarohin/first-order-model&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AliaksandrSiarohin/first-order-model&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這是一個讓「靜態圖片」，按照一段「動態影像」驅動的 AI。&lt;/p&gt;
+&lt;p&gt;簡單來說，就是你給他一張不會動的照片，&lt;br&gt;
+然後再給他一段會動的影片，&lt;br&gt;
+boom! 圖片照著影片動起來了。&lt;/p&gt;
+&lt;p&gt;我也試著拿我很久以前的照片，&lt;br&gt;
+套上當時流行的打咩打捏。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.png&#34;
+	width=&#34;423&#34;
+	height=&#34;419&#34;
+	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_480x0_resize_box_3.png 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;有點歪的老照片&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;242px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;生成結果&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/06VmwsvJs00&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        <item>
         <title>DehazeNet TensorFlow</title>
         <link>https://27153216.github.io/p/dehazenet-tensorflow/</link>
         <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -15,13 +255,17 @@
         <description>&lt;img src="https://27153216.github.io/p/dehazenet-tensorflow/home.png" alt="Featured image of post DehazeNet TensorFlow" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/DehazeNet_TF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/DehazeNet_TF&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
-&lt;p&gt;這是 2016 年的機器學習，單張影像去霧的論文：&lt;/p&gt;
+&lt;p&gt;DehazeNet 是 2016 年的機器學習去霧的論文：&lt;/p&gt;
 &lt;p&gt;DehazeNet An End-to-End System for Single Image&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://ieeexplore.ieee.org/abstract/document/7539399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ieeexplore.ieee.org/abstract/document/7539399&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;的 TensorFlow 實作版。&lt;br&gt;
-本論文原本使用的是相當舊的 Caffe 框架，作為練習，我自己看著 TF 的文檔實作論文中的網路架構。&lt;br&gt;
-可以正常的訓練及測試，由於訓練用的資料庫較新，去霧效果會比原本的好一點。&lt;/p&gt;
+&lt;p&gt;而這個作品是它的 TensorFlow 實作版。&lt;/p&gt;
+&lt;p&gt;本論文原本使用的是相當舊的 Caffe 框架，&lt;br&gt;
+作為練習，我自己看著 TF 的文檔實作論文中的網路架構。&lt;br&gt;
+可以使用自己的資料的訓練及測試，&lt;br&gt;
+由於訓練用的資料庫較新，去霧效果會比原本的好一點。&lt;/p&gt;
+&lt;p&gt;（因為是練習的關係，原始碼 training 的部分被我註解掉了，後來也就沒有再維護。）&lt;/p&gt;
+&lt;p&gt;以下是我自己訓練後產生的結果。&lt;/p&gt;
 &lt;h2 id=&#34;效果展示&#34;&gt;效果展示&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/dehazenet-tensorflow/home.png&#34;
 	width=&#34;2149&#34;
@@ -215,16 +459,27 @@
         <description>&lt;img src="https://27153216.github.io/p/shoot-the-zombie/home.png" alt="Featured image of post Shoot the Zombie" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/AI-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/AI-Project&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
-&lt;p&gt;這個作品是我人工智慧課程的期末專題，使用 Python 與 Pygame 套件開發的一個打殭屍遊戲。&lt;br&gt;
-殭屍會以固定路線移動，除了玩家自己打殭屍的版本以外，還有各種演算法與機器學習的自動打殭屍版本。&lt;br&gt;
-包含 GA 演算法、 PSO 演算法、 TensorFlow 機器學習，其中 PSO 又分成三種版本，TensorFlow 兩個版本。&lt;br&gt;
-基本概念都是射 10 槍為 1 輪，射 10 輪為 1 次迭代，再不斷的迭代中，電腦會越射越準，越來越接近殭屍的移動路線。&lt;br&gt;
-PSO 會有三個版本是因為，一開始我將 1 輪射擊視為 1 個 Particle，每 10 輪 1 個迭代，但這樣很容易卡在局部最佳解，最高分一直上不去。&lt;br&gt;
-因此後來做了加入 Mutation 的版本，讓它有一點隨機性，跳脫出局部最佳解的狀況。&lt;br&gt;
-而再後來我還是覺得 1 輪射擊視為 1 個 Particle 很奇怪，又做了霰彈槍版本的，一槍就是 10 個子彈，也就是 10 個 Particle，10 槍就是一個迭代，看起來合理許多。&lt;br&gt;
-TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是一起計算的版本。&lt;/p&gt;
+&lt;p&gt;這個作品是我人工智慧課程的期末專題，&lt;br&gt;
+使用 Python 與 Pygame 套件開發的一個打殭屍遊戲。&lt;/p&gt;
+&lt;p&gt;殭屍會以固定路線移動，&lt;br&gt;
+除了玩家自己打殭屍的版本以外，&lt;br&gt;
+還有各種演算法與機器學習的自動打殭屍版本。&lt;/p&gt;
+&lt;p&gt;包含 GA 演算法、PSO 演算法、TensorFlow 機器學習，&lt;br&gt;
+其中 PSO 又分成三種版本，TensorFlow 兩個版本。&lt;/p&gt;
+&lt;p&gt;基本概念都是射 10 槍為 1 輪，射 10 輪為 1 次迭代，&lt;br&gt;
+在不斷的迭代中，電腦會越射越準，&lt;br&gt;
+越來越接近殭屍的移動路線。&lt;/p&gt;
+&lt;p&gt;PSO 會有三個版本是因為，&lt;br&gt;
+一開始我將 1 輪射擊視為 1 個 Particle，每 10 輪 1 個迭代，&lt;br&gt;
+但這樣很容易卡在局部最佳解，最高分一直上不去。&lt;/p&gt;
+&lt;p&gt;因此後來做了加入 Mutation 的版本，&lt;br&gt;
+讓它有一點隨機性，跳脫出局部最佳解的狀況。&lt;/p&gt;
+&lt;p&gt;而再後來我還是覺得 1 輪射擊視為 1 個 Particle 很奇怪，又做了霰彈槍版本的，&lt;br&gt;
+一槍就是 10 個子彈，也就是 10 個 Particle，10 槍就是一個迭代，看起來合理許多。&lt;/p&gt;
+&lt;p&gt;TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是一起計算的版本。&lt;/p&gt;
 &lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
-&lt;p&gt;遊戲主畫面，左上方會顯示快捷鍵，左下方為剩餘彈藥，下方顯示當次分數與最高分。&lt;br&gt;
+&lt;p&gt;遊戲主畫面，&lt;br&gt;
+左上方會顯示快捷鍵，左下方為剩餘彈藥，下方顯示當次分數與最高分。&lt;br&gt;
 命中殭屍會在背景留下血漬，未命中則是彈孔。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/illustrate.png&#34;
 	width=&#34;2560&#34;
@@ -240,9 +495,11 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;演算法版本在右邊會看到一個圖表，縱軸顯示的是得分，橫軸顯示的是迭代次數。&lt;br&gt;
-由於電腦訓練需要時間，可以按下 a 加速進行，按 d 恢復。&lt;br&gt;
-按 z 可以將右方圖表的更新暫停，因為在加速訓練的時候，不斷的刷新圖表會導致運行效率下降。&lt;/p&gt;
+&lt;p&gt;演算法版本在右邊會看到一個圖表，&lt;br&gt;
+縱軸顯示的是得分，橫軸顯示的是迭代次數。&lt;/p&gt;
+&lt;p&gt;由於電腦訓練需要時間，可以按下 a 加速進行，按 d 恢復。&lt;/p&gt;
+&lt;p&gt;按 z 可以將右方圖表的更新暫停，&lt;br&gt;
+因為在加速訓練的時候，不斷的刷新圖表會導致運行效率下降。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/alg.png&#34;
 	width=&#34;1470&#34;
 	height=&#34;642&#34;
@@ -257,7 +514,10 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
 		data-flex-basis=&#34;549px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是只讓電腦知道該槍與殭屍差了多少距離，只有一個 loss 的版本。&lt;/p&gt;
+&lt;p&gt;TensorFlow 的部分，&lt;br&gt;
+一個是將 x, y 軸的 loss 分開計算，&lt;br&gt;
+另一個是只讓電腦知道該槍與殭屍差了多少距離，&lt;br&gt;
+只有一個 loss 的版本。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/shoot-the-zombie/TF1.png&#34;
 	width=&#34;1696&#34;
 	height=&#34;746&#34;
@@ -314,14 +574,23 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
         <description>&lt;img src="https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811.png" alt="Featured image of post 臉部表情辨識及其在老態預防上的應用" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/Undergraduate-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/Undergraduate-Project&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;專題介紹&#34;&gt;專題介紹&lt;/h2&gt;
-&lt;p&gt;這個專題是一款使用 Python 開發的小遊戲，玩家可以進行單人打磚塊或是雙人桌球對戰。&lt;br&gt;
-透過 YOLOv3-tiny 物件偵測功能，使用 CK+ 表情資料集進行訓練，使遊戲可以辨識玩家的表情，並將其分為中性、悲傷、開心、生氣、驚訝等五種不同的表情，以控制滑板的不動、向左、向右、左發球、右發球等操作。&lt;br&gt;
-這樣的遊戲方式可以幫助玩家訓練面部肌肉，達到預防臉部老化的效果。&lt;br&gt;
-本專題在專題成果競賽中榮獲第一名，並寫成論文發表至 ICIM 2021 榮獲佳作，還受邀參加 KOSMOS 產學成果展。&lt;/p&gt;
-&lt;p&gt;在這個專題中，我主要負責程式開發的大部分工作，包括遊戲核心、表情控制滑板、效能優化等方面。&lt;/p&gt;
+&lt;p&gt;這個專題是一款使用 Python 開發的小遊戲，&lt;br&gt;
+玩家可以進行單人打磚塊或是雙人桌球對戰。&lt;/p&gt;
+&lt;p&gt;透過 YOLOv3-tiny 物件偵測功能，使用 CK+ 表情資料集進行訓練，&lt;br&gt;
+使遊戲可以辨識玩家的表情，並將其分為中性、悲傷、開心、生氣、驚訝等五種不同的表情，&lt;br&gt;
+以控制滑板的不動、向左、向右、左發球、右發球等操作。&lt;/p&gt;
+&lt;p&gt;這樣的遊戲方式可以幫助玩家訓練面部肌肉，&lt;br&gt;
+達到預防臉部老化的效果。&lt;/p&gt;
+&lt;p&gt;本專題在專題成果競賽中榮獲第一名，&lt;br&gt;
+並寫成論文發表至 ICIM 2021 榮獲佳作，&lt;br&gt;
+還受邀參加 KOSMOS 產學成果展。&lt;/p&gt;
+&lt;p&gt;在這個專題中，&lt;br&gt;
+我主要負責程式開發的大部分工作，&lt;br&gt;
+包括遊戲核心、表情控制滑板、效能優化等方面。&lt;/p&gt;
 &lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
-&lt;p&gt;遊戲透過 YOLO 辨識玩家的五種表情，分別是中性、悲傷、開心、生氣、驚訝。&lt;br&gt;
-而玩家則要透過精準的表情控制，來移動滑板。&lt;/p&gt;
+&lt;p&gt;遊戲透過 YOLO 辨識玩家的五種表情，&lt;br&gt;
+分別是中性、悲傷、開心、生氣、驚訝。&lt;/p&gt;
+&lt;p&gt;而玩家則要透過精準的表情控制，來移動滑板。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E8%A1%A8%E6%83%85neutral.png&#34;
 	width=&#34;643&#34;
 	height=&#34;520&#34;
@@ -456,7 +725,8 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;雙人對戰是由兩人參與的桌球遊戲。&lt;br&gt;
-此時攝影機畫面會一分為二，左方玩家控制上方滑板，右方玩家控制下方滑板。&lt;br&gt;
+此時攝影機畫面會一分為二，&lt;br&gt;
+左方玩家控制上方滑板，右方玩家控制下方滑板。&lt;br&gt;
 先奪得 11 分的人獲得勝利，考驗雙方對於表情的掌握度。&lt;/p&gt;
 &lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
 &lt;p&gt;0:00 專題介紹&lt;br&gt;
@@ -473,6 +743,7 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
     &lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;br&gt;
 &lt;h2 id=&#34;專題發表&#34;&gt;專題發表&lt;/h2&gt;
 &lt;p&gt;榮獲第一名&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E5%A4%A7%E5%AD%B8_%E5%B0%88%E9%A1%8C%E6%88%90%E6%9E%9C%E5%B1%95.jfif&#34;

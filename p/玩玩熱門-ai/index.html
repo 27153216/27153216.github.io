@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='個人練習'>
+<title>玩玩熱門 AI</title>
+
+<link rel='canonical' href='https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/'>
+
+<link rel="stylesheet" href="/scss/style.min.74bbc376c2f7fb6909684b7d9304348e4dbd81c83027d902e29f6c4fd09d81ac.css"><meta property='og:title' content='玩玩熱門 AI'>
+<meta property='og:description' content='個人練習'>
+<meta property='og:url' content='https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/'>
+<meta property='og:site_name' content='王昱翔的程式小窩'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.png' />
+<meta name="twitter:title" content="玩玩熱門 AI">
+<meta name="twitter:description" content="個人練習"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.png' />
+    <link rel="shortcut icon" href="/favicon.png" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGF1KC6KFX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGF1KC6KFX');
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/%E7%85%A7%E7%89%87_hu78e410438966dc7179e12ad9869b6d36_463242_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">王昱翔的程式小窩</a></h1>
+            <h2 class="site-description">這個網站展示了我的程式作品</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/27153216'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%97%9C%E6%96%BC%E6%88%91/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>關於我</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文章列表</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜尋</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>連結</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>夜晚模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#介紹">介紹</a></li>
+    <li><a href="#vits-語音模型">VITS 語音模型</a></li>
+    <li><a href="#stable-diffusion">Stable Diffusion</a></li>
+    <li><a href="#first-order-motion-model-for-image-animation">First Order Motion Model for Image Animation</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/">
+                <img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_800x0_resize_box_3.png"
+                        srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_800x0_resize_box_3.png 800w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="792" 
+                        loading="lazy"
+                        alt="Featured image of post 玩玩熱門 AI" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+            <a href="/categories/ai/ml/" >
+                AI/ML
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/">玩玩熱門 AI</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            個人練習
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan, 2023</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="介紹">介紹</h2>
+<p>這裡收集了一些我曾接觸過的熱門 AI 以及產出的作品</p>
+<h2 id="vits-語音模型">VITS 語音模型</h2>
+<p>最初 VITS 是文本轉語音的模型，<br>
+而之後就出現很多以 VITS 為基礎衍伸的模型。</p>
+<p>VITS 的原始論文與原始碼：<br>
+<a class="link" href="https://arxiv.org/abs/2106.06103"  target="_blank" rel="noopener"
+    >https://arxiv.org/abs/2106.06103</a><br>
+<a class="link" href="https://github.com/jaywalnut310/vits"  target="_blank" rel="noopener"
+    >https://github.com/jaywalnut310/vits</a></p>
+<p>而我最近在玩的，也就是非常熱門的 RVC。<br>
+全稱 Retrieval-based-Voice-Conversion<br>
+<a class="link" href="https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI"  target="_blank" rel="noopener"
+    >https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI</a></p>
+<p>他是一個基於 VITS 的語音轉換器，<br>
+簡單來說就是變聲器。</p>
+<p>除了一些熱門的預訓練模型外，<br>
+我也嘗試以自己的聲音訓練，<br>
+並產生了一些驚人的結果。</p>
+<p>真的是 AI 用你的聲音，唱得比你好聽😂<br>
+這邊放上其中一個。</p>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/PDbjL0rjI1Y" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+<p><br><br></p>
+<h2 id="stable-diffusion">Stable Diffusion</h2>
+<p>論文與原始碼：<br>
+<a class="link" href="https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html"  target="_blank" rel="noopener"
+    >https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html</a>
+<a class="link" href="https://github.com/CompVis/stable-diffusion"  target="_blank" rel="noopener"
+    >https://github.com/CompVis/stable-diffusion</a></p>
+<p>我想這個應該大家都很熟悉，<br>
+就是造成了很大爭議的 AI 繪圖。<br>
+因為訓練用的資料是否有侵權的疑慮，<br>
+以及大量生產的 AI 圖可能使初階繪師受到衝擊。</p>
+<p>我使用的生成器是這個<br>
+<a class="link" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui"  target="_blank" rel="noopener"
+    >https://github.com/AUTOMATIC1111/stable-diffusion-webui</a></p>
+<p>這邊分享幾張當初我生成的圖。</p>
+<p><img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1.png"
+	width="432"
+	height="307"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1_hu8669b17eddfd453c49405887840b0ac1_239683_480x0_resize_box_3.png 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/1_hu8669b17eddfd453c49405887840b0ac1_239683_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="337px"
+	
+>
+<img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2.png"
+	width="512"
+	height="512"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2_hu20431d00e317e2c75c80b0f2ef7fcb6b_305122_480x0_resize_box_3.png 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/2_hu20431d00e317e2c75c80b0f2ef7fcb6b_305122_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="240px"
+	
+></p>
+<p>其實都看得出在細節上有不少破綻，<br>
+不過到後來一直有更多新的技術在修正這些破綻，<br>
+比如可以調整骨架、手指、臉部的修正等等。</p>
+<p>但最令我驚訝的應該是 LoRA 的出現。<br>
+全名 LoRA: Low-Rank Adaptation of Large Language Models<br>
+<a class="link" href="https://arxiv.org/abs/2106.09685"  target="_blank" rel="noopener"
+    >https://arxiv.org/abs/2106.09685</a></p>
+<p>原先是用在微調大型語言模型上，<br>
+因為這些大型模型的數據量太大了，<br>
+如果想要特化某些類型的輸出，<br>
+整個重新訓練的成本相當高。</p>
+<p>而這項技術應用在 Stable Diffusion 上後，<br>
+讓特定風格、角色的生成出現了質的飛越。<br>
+<a class="link" href="https://github.com/cloneofsimo/lora"  target="_blank" rel="noopener"
+    >https://github.com/cloneofsimo/lora</a></p>
+<p>只要選好基底的 Checkpoint，<br>
+加上特定風格或角色的 LoRA，<br>
+幾乎能生成出任何種類的人物圖像。</p>
+<p>改變的關鍵就是特化訓練所需的樣本數很少，<br>
+最少僅需要15張左右的特定樣本，<br>
+以及不到半小時的訓練時間，<br>
+就可以得到很好的效果，<br>
+因此人人都能訓練一個自己喜歡的角色或風格。</p>
+<p>從真人到特定人物（右圖為新垣結衣）</p>
+<p><img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634.jpeg"
+	width="512"
+	height="768"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="真人"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="160px"
+	
+>
+<img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476.jpeg"
+	width="768"
+	height="1440"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476_hu3b4c93ed4ddc46f45f47a84c66fee4e0_132394_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/00021-951204476_hu3b4c93ed4ddc46f45f47a84c66fee4e0_132394_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="新垣結衣"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="53"
+		data-flex-basis="128px"
+	
+></p>
+<p>來源： <a class="link" href="https://civitai.com/models/14171/cutegirlmix4"  target="_blank" rel="noopener"
+    >https://civitai.com/models/14171/cutegirlmix4</a><br>
+<a class="link" href="https://civitai.com/models/8416/gakki-or-aragaki-yui-or"  target="_blank" rel="noopener"
+    >https://civitai.com/models/8416/gakki-or-aragaki-yui-or</a></p>
+<p>特定動畫角色或畫風</p>
+<p><img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima.jpeg"
+	width="960"
+	height="1280"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima_hu2ec4b30c89e029a780f4de13aa41c9f6_126714_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/makima_hu2ec4b30c89e029a780f4de13aa41c9f6_126714_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="鏈鋸人  瑪奇瑪"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="75"
+		data-flex-basis="180px"
+	
+>
+<img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice.jpeg"
+	width="840"
+	height="1264"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice_hu05e5b489a2c6f8db75888dfee4aaec14_120395_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/onepeice_hu05e5b489a2c6f8db75888dfee4aaec14_120395_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="海賊王  魯夫"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="159px"
+	
+></p>
+<p>來源： <a class="link" href="https://civitai.com/models/5373/makima-chainsaw-man-lora"  target="_blank" rel="noopener"
+    >https://civitai.com/models/5373/makima-chainsaw-man-lora</a><br>
+<a class="link" href="https://civitai.com/models/4219/one-piece-wano-saga-style-lora"  target="_blank" rel="noopener"
+    >https://civitai.com/models/4219/one-piece-wano-saga-style-lora</a></p>
+<p>甚至是布偶、人偶&hellip;</p>
+<p><img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll.jpeg"
+	width="1024"
+	height="1536"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll_hub87990bf1aa24bea89b0388136d5164e_107583_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/doll_hub87990bf1aa24bea89b0388136d5164e_107583_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="可動人偶"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="160px"
+	
+>
+<img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357.jpeg"
+	width="896"
+	height="1344"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357_huc2171ebf007bae35ac025e2cca0edbcb_109779_480x0_resize_q75_box.jpeg 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/294357_huc2171ebf007bae35ac025e2cca0edbcb_109779_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+		alt="布偶"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="160px"
+	
+></p>
+<p>來源： <a class="link" href="https://civitai.com/models/26477/doll-style-photography-art-realisticjoints-dollsdbjdmdddddds"  target="_blank" rel="noopener"
+    >https://civitai.com/models/26477/doll-style-photography-art-realisticjoints-dollsdbjdmdddddds</a><br>
+<a class="link" href="https://civitai.com/models/22361/fufu-doll-realisticanime"  target="_blank" rel="noopener"
+    >https://civitai.com/models/22361/fufu-doll-realisticanime</a></p>
+<p>都能夠透過 AI 生成，<br>
+不禁令人感嘆現今 AI 發展的速度。</p>
+<br>
+<h2 id="first-order-motion-model-for-image-animation">First Order Motion Model for Image Animation</h2>
+<p>網站、論文、原始碼：<br>
+<a class="link" href="https://aliaksandrsiarohin.github.io/first-order-model-website/"  target="_blank" rel="noopener"
+    >https://aliaksandrsiarohin.github.io/first-order-model-website/</a><br>
+<a class="link" href="https://proceedings.neurips.cc/paper_files/paper/2019/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html"  target="_blank" rel="noopener"
+    >https://proceedings.neurips.cc/paper_files/paper/2019/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html</a><br>
+<a class="link" href="https://github.com/AliaksandrSiarohin/first-order-model"  target="_blank" rel="noopener"
+    >https://github.com/AliaksandrSiarohin/first-order-model</a></p>
+<p>這是一個讓「靜態圖片」，按照一段「動態影像」驅動的 AI。</p>
+<p>簡單來說，就是你給他一張不會動的照片，<br>
+然後再給他一段會動的影片，<br>
+boom! 圖片照著影片動起來了。</p>
+<p>我也試著拿我很久以前的照片，<br>
+套上當時流行的打咩打捏。</p>
+<p><img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.png"
+	width="423"
+	height="419"
+	srcset="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_480x0_resize_box_3.png 480w, /p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="有點歪的老照片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="242px"
+	
+></p>
+<p>生成結果</p>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/06VmwsvJs00" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相關文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/dehazenet-tensorflow/">
+        
+        
+            <div class="article-image">
+                <img src="/p/dehazenet-tensorflow/home.9d61ea9738264df9af89f96038567739_hu67f8430355ca06b07700fdafc5943ed4_1107042_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post DehazeNet TensorFlow"
+                        
+                        data-hash="md5-nWHqlzgmTfmviflgOFZ3OQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">DehazeNet TensorFlow</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/shoot-the-zombie/">
+        
+        
+            <div class="article-image">
+                <img src="/p/shoot-the-zombie/home.a46f7241667318469731bf23ae9fc99a_hue11fe5c24e50f9cd86ff2a335cc41171_621494_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Shoot the Zombie"
+                        
+                        data-hash="md5-pG9yQWZzGEaXMb8jrp/Jmg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Shoot the Zombie</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%87%89%E9%83%A8%E8%A1%A8%E6%83%85%E8%BE%A8%E8%AD%98%E5%8F%8A%E5%85%B6%E5%9C%A8%E8%80%81%E6%85%8B%E9%A0%90%E9%98%B2%E4%B8%8A%E7%9A%84%E6%87%89%E7%94%A8/%E9%A6%96%E9%A0%811.c9c270c8314f80817fd6d2719264bb25_huf75e8b2c3e6f76b2adb160073fae3236_247075_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 臉部表情辨識及其在老態預防上的應用"
+                        
+                        data-hash="md5-ycJwyDFPgIF/1tJxkmS7JQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">臉部表情辨識及其在老態預防上的應用</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 王昱翔的程式小窩
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -15,9 +15,14 @@
         <description>&lt;img src="https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home.png" alt="Featured image of post 電子商務平台" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/EC-Project&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/EC-Project&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
-&lt;p&gt;這是我在電子商務的課程中做的課堂作品，由 ASP.NET 結合 SQL Server 開發的電子商務平台。&lt;br&gt;
-本專題為小組開發，網頁與程式部分全部由我開發，小組成員負責商品構想、行銷計畫、價格制定等等其他部分。&lt;br&gt;
-此購物網站原先是連結到學校的資料庫，但由於課程結束，資料庫已經關閉，因此這個版本改成本地資料庫。&lt;/p&gt;
+&lt;p&gt;這是我在電子商務的課程中做的課堂作品，&lt;br&gt;
+由 ASP.NET 結合 SQL Server 開發的電子商務平台。&lt;/p&gt;
+&lt;p&gt;本專題為小組開發，&lt;br&gt;
+網頁與程式部分由我開發，&lt;br&gt;
+小組成員負責商品構想、行銷計畫、價格制定等等其他部分。&lt;/p&gt;
+&lt;p&gt;此購物網站原先是連結到學校的資料庫，&lt;br&gt;
+但由於課程結束，資料庫已經關閉，&lt;br&gt;
+因此這個版本改成本地資料庫。&lt;/p&gt;
 &lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
 &lt;p&gt;首頁由五張輪播圖構成。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/home.png&#34;
@@ -64,7 +69,7 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;（商品的資料為方便演示，並非當時的真實資料）
+&lt;p&gt;（商品的資料為方便演示，並非當時的真實資料）&lt;br&gt;
 購買按鈕已經沒有功能，因為學校伺服器已經關閉。&lt;/p&gt;
 &lt;p&gt;帳號註冊、登入。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/signup.png&#34;
@@ -111,8 +116,12 @@
 		data-flex-basis=&#34;426px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;因為在不斷修改資料的過程中，每次修改都要連入學校的資料庫，打一長串資料庫指令，非常繁瑣。&lt;br&gt;
-因此我自己建立了一個管理頁面，並且要登入指定的帳戶才能進入，方便我自己修改及新增資料。&lt;/p&gt;
+&lt;p&gt;因為在不斷修改資料的過程中，&lt;br&gt;
+每次修改都要連入學校的資料庫，&lt;br&gt;
+打一長串資料庫指令，非常繁瑣。&lt;/p&gt;
+&lt;p&gt;因此我自己建立了一個管理頁面，&lt;br&gt;
+並且要登入指定的帳戶才能進入，&lt;br&gt;
+方便我自己修改及新增資料。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%B9%B3%E5%8F%B0/manage.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1440&#34;
@@ -148,11 +157,16 @@
         <description>&lt;img src="https://27153216.github.io/p/petii/home.png" alt="Featured image of post PetII" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/PetII&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/PetII&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
-&lt;p&gt;這是我在資料庫應用程式設計的課程中做的課堂作品，一款用 Windows Form 開發的寵物小遊戲。&lt;br&gt;
-語言使用 C# ，結合 SQL Server 儲存玩家資料。&lt;br&gt;
-這個作品為 3 人小組開發，我的負責部分為程式撰寫、優化，後半段寵物互動環節的所有內容。&lt;/p&gt;
+&lt;p&gt;這是我在資料庫應用程式設計的課程中做的課堂作品，&lt;br&gt;
+一款用 Windows Form 開發的寵物小遊戲。&lt;/p&gt;
+&lt;p&gt;語言使用 C# ，結合 SQL Server 儲存玩家資料。&lt;/p&gt;
+&lt;p&gt;這個作品為 3 人小組開發，&lt;br&gt;
+我的負責部分為程式撰寫、優化，&lt;br&gt;
+後半段寵物互動環節的所有內容。&lt;/p&gt;
 &lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
-&lt;p&gt;開啟程式後，可以在畫面中開啟新遊戲或讀取舊有紀錄，旁邊可以調整音量。&lt;/p&gt;
+&lt;p&gt;開啟程式後，&lt;br&gt;
+可以在畫面中開啟新遊戲或讀取舊有紀錄，&lt;br&gt;
+旁邊可以調整音量。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/home.png&#34;
 	width=&#34;585&#34;
 	height=&#34;350&#34;
@@ -182,7 +196,8 @@
 		data-flex-basis=&#34;400px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;開始新遊戲後，會進入一段前置劇情，並幫寵物取名。&lt;/p&gt;
+&lt;p&gt;開始新遊戲後，&lt;br&gt;
+會進入一段前置劇情，並幫寵物取名。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/story.png&#34;
 	width=&#34;609&#34;
 	height=&#34;365&#34;
@@ -211,7 +226,8 @@
 		data-flex-basis=&#34;401px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;前置劇情結束後，進入寵物互動環節。（由此開始是我獨立開發）&lt;/p&gt;
+&lt;p&gt;前置劇情結束後，進入寵物互動環節。&lt;br&gt;
+（由此開始是我開發）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/pet.png&#34;
 	width=&#34;599&#34;
 	height=&#34;360&#34;
@@ -226,10 +242,12 @@
 		data-flex-basis=&#34;399px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;畫面中會有一隻貓咪四處走動，玩家可以點擊右方按鈕與她進行各種互動。&lt;br&gt;
-畫面上方可以看到操作的紀錄和親密度。&lt;/p&gt;
-&lt;p&gt;此處我們點擊右上方的飼料，會看見飼料隨著滑鼠移動。&lt;br&gt;
-放置於地板後，貓咪會衝向飼料，並增加親密度。&lt;br&gt;
+&lt;p&gt;畫面中會有一隻貓咪四處走動，&lt;br&gt;
+玩家可以點擊右方按鈕與她進行各種互動。&lt;/p&gt;
+&lt;p&gt;畫面上方可以看到操作的紀錄和親密度。&lt;/p&gt;
+&lt;p&gt;此處我們點擊右上方的飼料，&lt;br&gt;
+會看見飼料隨著滑鼠移動。&lt;/p&gt;
+&lt;p&gt;放置於地板後，貓咪會衝向飼料，並增加親密度。&lt;br&gt;
 若放置於無法取得的地方，貓咪會提醒玩家。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/feed.png&#34;
 	width=&#34;599&#34;
@@ -259,7 +277,8 @@
 		data-flex-basis=&#34;400px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;玩家也可以碰觸貓咪，增加親密度，左上方可以看見玩家操作紀錄。&lt;/p&gt;
+&lt;p&gt;玩家也可以碰觸貓咪，增加親密度，&lt;br&gt;
+左上方可以看見玩家操作紀錄。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/feed3.png&#34;
 	width=&#34;599&#34;
 	height=&#34;359&#34;
@@ -274,7 +293,8 @@
 		data-flex-basis=&#34;400px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;玩家若離開程式，下次開啟時也可以讀取上次遊玩的進度。&lt;/p&gt;
+&lt;p&gt;玩家若離開程式，&lt;br&gt;
+下次開啟時也可以讀取上次遊玩的進度。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/petii/memory2.png&#34;
 	width=&#34;599&#34;
 	height=&#34;359&#34;

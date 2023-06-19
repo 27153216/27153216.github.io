@@ -345,16 +345,27 @@
     <p><a class="link" href="https://github.com/27153216/AI-Project"  target="_blank" rel="noopener"
     >https://github.com/27153216/AI-Project</a></p>
 <h2 id="作品介紹">作品介紹</h2>
-<p>這個作品是我人工智慧課程的期末專題，使用 Python 與 Pygame 套件開發的一個打殭屍遊戲。<br>
-殭屍會以固定路線移動，除了玩家自己打殭屍的版本以外，還有各種演算法與機器學習的自動打殭屍版本。<br>
-包含 GA 演算法、 PSO 演算法、 TensorFlow 機器學習，其中 PSO 又分成三種版本，TensorFlow 兩個版本。<br>
-基本概念都是射 10 槍為 1 輪，射 10 輪為 1 次迭代，再不斷的迭代中，電腦會越射越準，越來越接近殭屍的移動路線。<br>
-PSO 會有三個版本是因為，一開始我將 1 輪射擊視為 1 個 Particle，每 10 輪 1 個迭代，但這樣很容易卡在局部最佳解，最高分一直上不去。<br>
-因此後來做了加入 Mutation 的版本，讓它有一點隨機性，跳脫出局部最佳解的狀況。<br>
-而再後來我還是覺得 1 輪射擊視為 1 個 Particle 很奇怪，又做了霰彈槍版本的，一槍就是 10 個子彈，也就是 10 個 Particle，10 槍就是一個迭代，看起來合理許多。<br>
-TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是一起計算的版本。</p>
+<p>這個作品是我人工智慧課程的期末專題，<br>
+使用 Python 與 Pygame 套件開發的一個打殭屍遊戲。</p>
+<p>殭屍會以固定路線移動，<br>
+除了玩家自己打殭屍的版本以外，<br>
+還有各種演算法與機器學習的自動打殭屍版本。</p>
+<p>包含 GA 演算法、PSO 演算法、TensorFlow 機器學習，<br>
+其中 PSO 又分成三種版本，TensorFlow 兩個版本。</p>
+<p>基本概念都是射 10 槍為 1 輪，射 10 輪為 1 次迭代，<br>
+在不斷的迭代中，電腦會越射越準，<br>
+越來越接近殭屍的移動路線。</p>
+<p>PSO 會有三個版本是因為，<br>
+一開始我將 1 輪射擊視為 1 個 Particle，每 10 輪 1 個迭代，<br>
+但這樣很容易卡在局部最佳解，最高分一直上不去。</p>
+<p>因此後來做了加入 Mutation 的版本，<br>
+讓它有一點隨機性，跳脫出局部最佳解的狀況。</p>
+<p>而再後來我還是覺得 1 輪射擊視為 1 個 Particle 很奇怪，又做了霰彈槍版本的，<br>
+一槍就是 10 個子彈，也就是 10 個 Particle，10 槍就是一個迭代，看起來合理許多。</p>
+<p>TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是一起計算的版本。</p>
 <h2 id="功能介紹">功能介紹</h2>
-<p>遊戲主畫面，左上方會顯示快捷鍵，左下方為剩餘彈藥，下方顯示當次分數與最高分。<br>
+<p>遊戲主畫面，<br>
+左上方會顯示快捷鍵，左下方為剩餘彈藥，下方顯示當次分數與最高分。<br>
 命中殭屍會在背景留下血漬，未命中則是彈孔。</p>
 <p><img src="/p/shoot-the-zombie/illustrate.png"
 	width="2560"
@@ -370,9 +381,11 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
 		data-flex-basis="426px"
 	
 ></p>
-<p>演算法版本在右邊會看到一個圖表，縱軸顯示的是得分，橫軸顯示的是迭代次數。<br>
-由於電腦訓練需要時間，可以按下 a 加速進行，按 d 恢復。<br>
-按 z 可以將右方圖表的更新暫停，因為在加速訓練的時候，不斷的刷新圖表會導致運行效率下降。</p>
+<p>演算法版本在右邊會看到一個圖表，<br>
+縱軸顯示的是得分，橫軸顯示的是迭代次數。</p>
+<p>由於電腦訓練需要時間，可以按下 a 加速進行，按 d 恢復。</p>
+<p>按 z 可以將右方圖表的更新暫停，<br>
+因為在加速訓練的時候，不斷的刷新圖表會導致運行效率下降。</p>
 <p><img src="/p/shoot-the-zombie/alg.png"
 	width="1470"
 	height="642"
@@ -387,7 +400,10 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
 		data-flex-basis="549px"
 	
 ></p>
-<p>TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是只讓電腦知道該槍與殭屍差了多少距離，只有一個 loss 的版本。</p>
+<p>TensorFlow 的部分，<br>
+一個是將 x, y 軸的 loss 分開計算，<br>
+另一個是只讓電腦知道該槍與殭屍差了多少距離，<br>
+只有一個 loss 的版本。</p>
 <p><img src="/p/shoot-the-zombie/TF1.png"
 	width="1696"
 	height="746"
@@ -454,6 +470,30 @@ TensorFlow 的部分，一個是將 x, y 軸的 loss 分開計算，另一個是
     <h2 class="section-title">相關文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/yuxiang.391794dd65231c5fd9ad5bd69a8ff1a2_hue9b2f6d0f34aed3dc589bbe3c9ae5a03_248397_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 玩玩熱門 AI"
+                        
+                        data-hash="md5-OReU3WUjHF/ZrVvWmo/xog==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">玩玩熱門 AI</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">

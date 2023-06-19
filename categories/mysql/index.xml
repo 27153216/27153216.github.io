@@ -15,10 +15,13 @@
         <description>&lt;img src="https://27153216.github.io/p/pet/name.png" alt="Featured image of post Pet" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/27153216/Pet&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/27153216/Pet&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;作品介紹&#34;&gt;作品介紹&lt;/h2&gt;
-&lt;p&gt;這是我在資料庫原理與應用的課程中做的課堂作品，一款網頁養寵物小遊戲。&lt;br&gt;
-網頁部分使用 PHP 實現，結合 MySQL 儲存玩家資料。&lt;/p&gt;
+&lt;p&gt;這是我在資料庫原理與應用的課程中做的課堂作品，&lt;br&gt;
+一款網頁養寵物小遊戲。&lt;/p&gt;
+&lt;p&gt;網頁部分使用 PHP 實現，&lt;br&gt;
+結合 MySQL 儲存玩家資料。&lt;/p&gt;
 &lt;h2 id=&#34;功能介紹&#34;&gt;功能介紹&lt;/h2&gt;
-&lt;p&gt;玩家第一次進入遊戲時，會請玩家輸入寵物的名字。&lt;/p&gt;
+&lt;p&gt;玩家第一次進入遊戲時，&lt;br&gt;
+會請玩家輸入寵物的名字。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/pet/name.png&#34;
 	width=&#34;574&#34;
 	height=&#34;142&#34;
@@ -33,7 +36,8 @@
 		data-flex-basis=&#34;970px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;輸入名字後，進入到遊戲主畫面。&lt;/p&gt;
+&lt;p&gt;輸入名字後，&lt;br&gt;
+進入到遊戲主畫面。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/pet/index.png&#34;
 	width=&#34;705&#34;
 	height=&#34;835&#34;
@@ -48,9 +52,12 @@
 		data-flex-basis=&#34;202px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;主畫面中可以看見一隻貓咪左右走動，滑鼠碰觸到她時會停下腳步，看向玩家。&lt;br&gt;
-玩家可以採取各種操作，並根據操作的內容增減親密度。&lt;br&gt;
-玩家做的所有操作以及親密度變化，會顯示在下方的操作紀錄中。&lt;/p&gt;
+&lt;p&gt;主畫面中可以看見一隻貓咪左右走動，&lt;br&gt;
+滑鼠碰觸到她時會停下腳步，看向玩家。&lt;/p&gt;
+&lt;p&gt;玩家可以採取各種操作，&lt;br&gt;
+並根據操作的內容增減親密度。&lt;/p&gt;
+&lt;p&gt;玩家做的所有操作以及親密度變化，&lt;br&gt;
+會顯示在下方的操作紀錄中。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/pet/index2.png&#34;
 	width=&#34;718&#34;
 	height=&#34;626&#34;
@@ -66,7 +73,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;影片介紹&#34;&gt;影片介紹&lt;/h2&gt;
-&lt;p&gt;拍攝影片時可能因版本問題導致資料庫寫入速度緩慢，原本情況下約 0.5 秒就有反應。&lt;/p&gt;
+&lt;p&gt;拍攝影片時可能因版本問題導致資料庫寫入速度緩慢，&lt;br&gt;
+原本情況下約 0.5 秒就有反應。&lt;/p&gt;
 &lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
             src=&#34;https://www.youtube.com/embed/SKYyvSSmjlU&#34; 
