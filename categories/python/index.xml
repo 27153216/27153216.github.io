@@ -29,10 +29,10 @@
 &lt;p&gt;他是一個基於 VITS 的語音轉換器，&lt;br&gt;
 簡單來說就是變聲器。&lt;/p&gt;
 &lt;p&gt;除了一些熱門的預訓練模型外，&lt;br&gt;
-我也嘗試以自己的聲音訓練，&lt;br&gt;
+我也嘗試以自己和朋友的聲音訓練，&lt;br&gt;
 並產生了一些驚人的結果。&lt;/p&gt;
 &lt;p&gt;真的是 AI 用你的聲音，唱得比你好聽😂&lt;br&gt;
-這邊放上其中一個。&lt;/p&gt;
+這邊放上我的其中一個。&lt;/p&gt;
 &lt;div class=&#34;video-wrapper&#34;&gt;
     &lt;iframe loading=&#34;lazy&#34; 
             src=&#34;https://www.youtube.com/embed/PDbjL0rjI1Y&#34; 
@@ -42,7 +42,15 @@
     &lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;要把特定的聲音套用到歌曲上，&lt;br&gt;
+首先要先進行人聲分離。&lt;/p&gt;
+&lt;p&gt;這邊我使用 UVR5 進行，&lt;br&gt;
+全名 Ultimate Vocal Remover。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/Anjok07/ultimatevocalremovergui&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Anjok07/ultimatevocalremovergui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接著把人聲部分透過 RVC 轉換過後，&lt;br&gt;
+再與音樂部分合成回去即可。&lt;/p&gt;
+&lt;br&gt;
 &lt;h2 id=&#34;stable-diffusion&#34;&gt;Stable Diffusion&lt;/h2&gt;
 &lt;p&gt;論文與原始碼：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -104,14 +112,14 @@
 以及不到半小時的訓練時間，&lt;br&gt;
 就可以得到很好的效果，&lt;br&gt;
 因此人人都能訓練一個自己喜歡的角色或風格。&lt;/p&gt;
-&lt;p&gt;從真人到特定人物（右圖為新垣結衣）&lt;/p&gt;
+&lt;p&gt;從隨機的真人到特定人物（右圖為新垣結衣）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634.jpeg&#34;
 	width=&#34;512&#34;
 	height=&#34;768&#34;
 	srcset=&#34;https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_480x0_resize_q75_box.jpeg 480w, https://27153216.github.io/p/%E7%8E%A9%E7%8E%A9%E7%86%B1%E9%96%80-ai/171634_hu55bb0dc71aefaf902fd7f502d1172ef5_47792_1024x0_resize_q75_box.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;真人&#34;
+		alt=&#34;隨機真人&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
